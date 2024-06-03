@@ -1,0 +1,8 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "branchPrefix": "renovate/",
+    "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+    "onboarding": false,
+    "platform": "github",
+    "repositories": []
+}
