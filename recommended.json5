@@ -1,0 +1,11 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:best-practices",
+        ":assignee(diba1013)",
+        ":labels(dependencies)",
+        ":rebaseStalePrs",
+        ":semanticCommits",
+        ":semanticCommitScope(deps)"
+    ]
+}
