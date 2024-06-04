@@ -1,6 +1,7 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "github>diba1013/renovate-config:recommended.json5"
+        "github>diba1013/renovate-config:recommended.json5",
+        ":automergeDigest"
     ]
 }
