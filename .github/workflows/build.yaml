@@ -1,0 +1,36 @@
+name: build
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      NPM_GITHUB_TOKEN: ${{ secrets.RENOVATE_GITHUB_PACKAGE_TOKEN }}
+
+    name: "Build"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: "Setup node"
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install
+        run: |
+          pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: |
+          pnpm lint

@@ -12,7 +12,7 @@ jobs:
         uses: renovatebot/github-action@v40.1.12
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
-          configurationFile: ".github/renovate.config.js"
+          configurationFile: ".github/renovate.config.cjs"
         env:
           LOG_LEVEL: "debug"
           RENOVATE_GITHUB_PACKAGE_TOKEN: ${{ secrets.RENOVATE_GITHUB_PACKAGE_TOKEN }}
