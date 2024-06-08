@@ -9,8 +9,7 @@
 		":semanticCommitScope(deps)"
 	],
 	"postUpgradeTasks": {
-		"commands": ["pnpm lint:fix || true"],
-		"fileFilters": [],
+		"commands": ["pnpm run lint:fix || true"],
 		"executionMode": "update"
 	}
 }

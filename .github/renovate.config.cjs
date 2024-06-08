@@ -12,4 +12,5 @@ module.exports = {
 			token: process.env.RENOVATE_GITHUB_PACKAGE_TOKEN,
 		},
 	],
+	allowedPostUpgradeCommands: [/^pnpm run [\w:-]+ \|\| true$/],
 };
