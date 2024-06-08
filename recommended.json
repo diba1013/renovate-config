@@ -10,7 +10,7 @@
 	],
 	"postUpgradeTasks": {
 		"commands": ["pnpm run lint:fix || true"],
-		"fileFilters": "!.npmrc",
+		"fileFilters": ["!.npmrc"],
 		"executionMode": "update"
 	}
 }
