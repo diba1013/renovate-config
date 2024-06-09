@@ -1,3 +1,5 @@
+name: "renovate"
+
 on:
   schedule:
     - cron: "0/30 * * * *"
@@ -14,5 +16,5 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: ".github/renovate.config.cjs"
         env:
-          LOG_LEVEL: "debug"
+          LOG_LEVEL: "trace"
           RENOVATE_GITHUB_PACKAGE_TOKEN: ${{ secrets.RENOVATE_GITHUB_PACKAGE_TOKEN }}
