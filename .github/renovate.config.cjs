@@ -3,9 +3,8 @@ module.exports = {
 	gitAuthor: "Renovate Bot <renovate@mend.io>",
 	platform: "github",
 	onboarding: false,
-	// autodiscover: true,
-	// autodiscoverFilter: ["diba1013/*"],
-	repositories: ["diba1013/renovate-config"],
+	autodiscover: true,
+	autodiscoverFilter: ["diba1013/*"],
 	hostRules: [
 		{
 			matchHost: "https://npm.pkg.github.com/",
