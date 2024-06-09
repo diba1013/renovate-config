@@ -12,6 +12,7 @@ module.exports = {
 			token: process.env.RENOVATE_GITHUB_PACKAGE_TOKEN,
 		},
 	],
+	allowScripts: true,
 	gitNoVerify: ["push"],
 	allowedPostUpgradeCommands: ["^pnpm run [\\w:-]+ \\|\\| true$"],
 };
