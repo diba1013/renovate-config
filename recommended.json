@@ -7,6 +7,5 @@
 		":rebaseStalePrs",
 		":semanticCommits",
 		":semanticCommitScope(deps)"
-	],
-	"ignoreScripts": false
+	]
 }
