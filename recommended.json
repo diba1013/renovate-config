@@ -9,11 +9,10 @@
 		":semanticCommitScope(deps)",
 		"npm:unpublishSafe"
 	],
-	"addLabels": ["{{depType}}"],
 	"packageRules": [
 		{
 			"description": "Automatically merge development / production dependencies up to minor",
-			"matchDepTypes": ["devDependencies", "production"],
+			"matchDepTypes": ["devDependencies", "production", "packageManager"],
 			"extends": [":automergeStableNonMajor"]
 		}
 	]
