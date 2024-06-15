@@ -6,7 +6,15 @@
 		":labels(dependencies)",
 		":rebaseStalePrs",
 		":semanticCommits",
-		":semanticCommitScope(deps)"
+		":semanticCommitScope(deps)",
+		"npm:unpublishSafe"
 	],
-	"ignoreScripts": false
+	"addLabels": ["{{depType}}"],
+	"packageRules": [
+		{
+			"description": "Automatically merge development / production dependencies up to minor",
+			"matchDepTypes": ["devDependencies", "production"],
+			"extends": [":automergeStableNonMajor"]
+		}
+	]
 }
