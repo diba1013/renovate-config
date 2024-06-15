@@ -7,5 +7,12 @@
 		":rebaseStalePrs",
 		":semanticCommits",
 		":semanticCommitScope(deps)"
+	],
+	"packageRules": [
+		{
+			"description": "Automatically merge development / production dependencies up to minor",
+			"matchDepTypes": ["devDependencies", "production"],
+			"extends": [":automergeStableNonMajor"]
+		}
 	]
 }
