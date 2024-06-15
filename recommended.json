@@ -6,7 +6,8 @@
 		":labels(dependencies)",
 		":rebaseStalePrs",
 		":semanticCommits",
-		":semanticCommitScope(deps)"
+		":semanticCommitScope(deps)",
+		"npm:unpublishSafe"
 	],
 	"addLabels": ["{{depType}}"],
 	"packageRules": [
