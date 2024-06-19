@@ -1,6 +1,6 @@
 module.exports = {
 	branchPrefix: "renovate/",
-	gitAuthor: "Renovate Bot <renovate@mend.io>",
+	gitAuthor: `${process.env.RENOVATE_GIT_AUTHOR_NAME} <${process.env.RENOVATE_GIT_AUTHOR_EMAIL}>`,
 	platform: "github",
 	onboarding: false,
 	autodiscover: true,
