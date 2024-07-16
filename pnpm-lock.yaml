@@ -18,8 +18,8 @@ importers:
         specifier: 0.11.1
         version: 0.11.1(eslint@8.57.0)(prettier@3.3.2)(svelte@4.2.18)(typescript@5.4.5)
       '@diba1013/prettier-config':
-        specifier: 0.11.1
-        version: 0.11.1(prettier@3.3.2)(svelte@4.2.18)
+        specifier: 0.12.2
+        version: 0.12.2(prettier@3.3.2)(svelte@4.2.18)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -126,8 +126,8 @@ packages:
       eslint: 8.x
       prettier: 3.x
 
-  '@diba1013/prettier-config@0.11.1':
-    resolution: {integrity: sha512-yky1Zsf1zfXkAud0ErVKRlzYQBqi7XZVz1bz6vPBbVLSQ0gvtBbVYFsUD6JA2q58xvEDRm2d6UmOJblTk0zC+w==, tarball: https://npm.pkg.github.com/download/@diba1013/prettier-config/0.11.1/cff27685012dcac4ce5a4ed36e03e8af9cb53982}
+  '@diba1013/prettier-config@0.12.2':
+    resolution: {integrity: sha512-KY+0tPNgI59RRQCjXWcx0GBiYDlgg5nSECt4aXJ7NvY70LZa1Q0MevigtG/oRXHpdXjfvddbd77oBlOjiCausg==, tarball: https://npm.pkg.github.com/download/@diba1013/prettier-config/0.12.2/4f2212e57b17d62f4c4cb2be226ce709527b6ee1}
     peerDependencies:
       prettier: 3.x
 
@@ -1227,14 +1227,14 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier-plugin-svelte@3.2.4:
-    resolution: {integrity: sha512-tZv+ADfeOWFNQkXkRh6zUXE16w3Vla8x2Ug0B/EnSmjR4EnwdwZbGgL/liSwR1kcEALU5mAAyua98HBxheCxgg==}
+  prettier-plugin-svelte@3.2.5:
+    resolution: {integrity: sha512-vP/M/Goc8z4iVIvrwXwbrYVjJgA0Hf8PO1G4LBh/ocSt6vUP6sLvyu9F3ABEGr+dbKyxZjEKLkeFsWy/yYl0HQ==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
 
-  prettier-plugin-tailwindcss@0.5.14:
-    resolution: {integrity: sha512-Puaz+wPUAhFp8Lo9HuciYKM2Y2XExESjeT+9NQoVFXZsPPnc9VYss2SpxdQ6vbatmt8/4+SN0oe0I1cPDABg9Q==}
+  prettier-plugin-tailwindcss@0.6.5:
+    resolution: {integrity: sha512-axfeOArc/RiGHjOIy9HytehlC0ZLeMaqY09mm8YCkMzznKiDkwFzOpBvtuhuv3xG5qB73+Mj7OCe2j/L1ryfuQ==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -1773,11 +1773,11 @@ snapshots:
       - ts-node
       - typescript
 
-  '@diba1013/prettier-config@0.11.1(prettier@3.3.2)(svelte@4.2.18)':
+  '@diba1013/prettier-config@0.12.2(prettier@3.3.2)(svelte@4.2.18)':
     dependencies:
       prettier: 3.3.2
-      prettier-plugin-svelte: 3.2.4(prettier@3.3.2)(svelte@4.2.18)
-      prettier-plugin-tailwindcss: 0.5.14(prettier-plugin-svelte@3.2.4(prettier@3.3.2)(svelte@4.2.18))(prettier@3.3.2)
+      prettier-plugin-svelte: 3.2.5(prettier@3.3.2)(svelte@4.2.18)
+      prettier-plugin-tailwindcss: 0.6.5(prettier-plugin-svelte@3.2.5(prettier@3.3.2)(svelte@4.2.18))(prettier@3.3.2)
     transitivePeerDependencies:
       - '@ianvs/prettier-plugin-sort-imports'
       - '@prettier/plugin-pug'
@@ -2918,16 +2918,16 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-svelte@3.2.4(prettier@3.3.2)(svelte@4.2.18):
+  prettier-plugin-svelte@3.2.5(prettier@3.3.2)(svelte@4.2.18):
     dependencies:
       prettier: 3.3.2
       svelte: 4.2.18
 
-  prettier-plugin-tailwindcss@0.5.14(prettier-plugin-svelte@3.2.4(prettier@3.3.2)(svelte@4.2.18))(prettier@3.3.2):
+  prettier-plugin-tailwindcss@0.6.5(prettier-plugin-svelte@3.2.5(prettier@3.3.2)(svelte@4.2.18))(prettier@3.3.2):
     dependencies:
       prettier: 3.3.2
     optionalDependencies:
-      prettier-plugin-svelte: 3.2.4(prettier@3.3.2)(svelte@4.2.18)
+      prettier-plugin-svelte: 3.2.5(prettier@3.3.2)(svelte@4.2.18)
 
   prettier@3.3.2: {}
 
