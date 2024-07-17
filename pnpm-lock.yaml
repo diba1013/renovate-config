@@ -18,8 +18,8 @@ importers:
         specifier: 0.11.1
         version: 0.11.1(eslint@8.57.0)(prettier@3.3.3)(svelte@4.2.18)(typescript@5.4.5)
       '@diba1013/prettier-config':
-        specifier: 0.12.3
-        version: 0.12.3(prettier@3.3.3)(svelte@4.2.18)
+        specifier: 0.12.4
+        version: 0.12.4(prettier@3.3.3)(svelte@4.2.18)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -126,8 +126,8 @@ packages:
       eslint: 8.x
       prettier: 3.x
 
-  '@diba1013/prettier-config@0.12.3':
-    resolution: {integrity: sha512-kM6KQ/4jP1A/JYwTz3TZgrq92pxmF04hTAAKy4qDikavg/yBa09MlaDni4VqbX6uIfGhcAh9d4EXVjpjC6fJwg==, tarball: https://npm.pkg.github.com/download/@diba1013/prettier-config/0.12.3/2008e667385ff174ca1d4420dccc014bf486d113}
+  '@diba1013/prettier-config@0.12.4':
+    resolution: {integrity: sha512-MyVgaXuy34paqpEvxbA6FPe3U9FTNXp4RY3X1clL8xLkmEZZKOt97r2SDjlhcHmax94CX7KFkXAmAz6WPQfnPQ==, tarball: https://npm.pkg.github.com/download/@diba1013/prettier-config/0.12.4/9d9341f20240daa3f70fa6d154bf01be190ebeb6}
     peerDependencies:
       prettier: 3.x
 
@@ -1773,7 +1773,7 @@ snapshots:
       - ts-node
       - typescript
 
-  '@diba1013/prettier-config@0.12.3(prettier@3.3.3)(svelte@4.2.18)':
+  '@diba1013/prettier-config@0.12.4(prettier@3.3.3)(svelte@4.2.18)':
     dependencies:
       prettier: 3.3.3
       prettier-plugin-svelte: 3.2.5(prettier@3.3.3)(svelte@4.2.18)
