@@ -21,7 +21,7 @@ importers:
         specifier: 0.12.4
         version: 0.12.4(prettier@3.3.3)(svelte@4.2.18)
       '@types/node':
-        specifier: ^20.14.11
+        specifier: 20.14.11
         version: 20.14.11
       eslint:
         specifier: 9.7.0
