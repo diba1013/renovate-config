@@ -11,19 +11,19 @@ jobs:
     env:
       NPM_GITHUB_TOKEN: ${{ secrets.RENOVATE_GITHUB_PACKAGE_TOKEN }}
 
-    name: "Build"
+    name: Build
     steps:
       - name: Checkout
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
 
-      - name: "Prepare"
+      - name: Prepare
         run: |
           corepack enable
 
-      - name: "Setup node"
+      - name: Setup node
         uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install

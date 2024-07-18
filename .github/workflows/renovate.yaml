@@ -1,4 +1,4 @@
-name: "renovate"
+name: renovate
 
 on:
   schedule:
@@ -14,9 +14,9 @@ jobs:
         uses: renovatebot/github-action@042670e39b8d7335e992c3fa526ecbfbd52ef57b # v40.2.2
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
-          configurationFile: ".github/renovate.config.cjs"
+          configurationFile: .github/renovate.config.cjs
         env:
-          LOG_LEVEL: "debug"
+          LOG_LEVEL: debug
           RENOVATE_GIT_AUTHOR_NAME: ${{ secrets.RENOVATE_GIT_AUTHOR_NAME }}
           RENOVATE_GIT_AUTHOR_EMAIL: ${{ secrets.RENOVATE_GIT_AUTHOR_EMAIL }}
           RENOVATE_GITHUB_PACKAGE_TOKEN: ${{ secrets.RENOVATE_GITHUB_PACKAGE_TOKEN }}

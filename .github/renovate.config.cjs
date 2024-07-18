@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
 	branchPrefix: "renovate/",
 	gitAuthor: `${process.env.RENOVATE_GIT_AUTHOR_NAME} <${process.env.RENOVATE_GIT_AUTHOR_EMAIL}>`,
@@ -14,5 +15,5 @@ module.exports = {
 	],
 	allowScripts: true,
 	gitNoVerify: ["push"],
-	allowedPostUpgradeCommands: ["^pnpm run [\\w:-]+ \\|\\| true$"],
+	allowedPostUpgradeCommands: [String.raw`^pnpm run [\w:-]+ \|\| true$`],
 };
