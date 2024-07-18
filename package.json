@@ -1,8 +1,8 @@
 {
 	"name": "@diba1013/renovate",
 	"private": "true",
-	"type": "module",
 	"packageManager": "pnpm@9.5.0",
+	"type": "module",
 	"scripts": {
 		"prepare": "husky",
 		"lint": "prettier --check . && eslint .",
@@ -11,10 +11,11 @@
 	"devDependencies": {
 		"@commitlint/cli": "19.3.0",
 		"@commitlint/config-conventional": "19.2.2",
-		"@diba1013/eslint-config": "0.11.1",
+		"@diba1013/eslint-config": "0.12.4",
 		"@diba1013/prettier-config": "0.12.4",
-		"eslint": "8.57.0",
-		"husky": "9.0.11",
+		"@types/node": "^20.14.11",
+		"eslint": "9.7.0",
+		"husky": "9.1.1",
 		"lint-staged": "15.2.7",
 		"prettier": "3.3.3"
 	}
