@@ -13,7 +13,7 @@
 		"@commitlint/config-conventional": "19.2.2",
 		"@diba1013/eslint-config": "0.12.4",
 		"@diba1013/prettier-config": "0.12.4",
-		"@types/node": "20.14.13",
+		"@types/node": "20.14.14",
 		"eslint": "9.8.0",
 		"husky": "9.1.4",
 		"lint-staged": "15.2.7",
