@@ -9,7 +9,7 @@
 		"lint:fix": "prettier --write . && eslint --fix ."
 	},
 	"devDependencies": {
-		"@commitlint/cli": "19.3.0",
+		"@commitlint/cli": "19.4.0",
 		"@commitlint/config-conventional": "19.2.2",
 		"@diba1013/eslint-config": "0.12.4",
 		"@diba1013/prettier-config": "0.12.4",
