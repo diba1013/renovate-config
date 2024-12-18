@@ -14,7 +14,7 @@
 		"@diba1013/eslint-config": "0.12.4",
 		"@diba1013/prettier-config": "0.12.4",
 		"@types/node": "22.10.2",
-		"eslint": "9.14.0",
+		"eslint": "9.17.0",
 		"husky": "9.1.7",
 		"lint-staged": "15.2.11",
 		"prettier": "3.4.2"
