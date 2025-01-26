@@ -1,3 +1,3 @@
-import { defineConfig } from "@diba1013/prettier-config";
+import { defineConfig } from "@diba1013/linter/prettier";
 
 export default defineConfig();
