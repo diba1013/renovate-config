@@ -12,8 +12,8 @@
 	"packageRules": [
 		{
 			"description": "Automatically merge development / production dependencies up to minor",
-			"matchDepTypes": ["devDependencies", "production", "packageManager"],
-			"extends": [":automergeMinor"]
+			"matchDepTypes": ["devDependencies", "production", "packageManager", "action"],
+			"extends": [":automergeMinor", ":automergeDigest"]
 		}
 	]
 }
