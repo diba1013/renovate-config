@@ -13,7 +13,7 @@
 		{
 			"description": "Automatically merge development / production dependencies up to minor",
 			"matchDepTypes": ["devDependencies", "production", "packageManager"],
-			"extends": [":automergeStableNonMajor"]
+			"extends": [":automergeMinor"]
 		}
 	]
 }
