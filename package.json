@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "20.2.0",
 		"@commitlint/config-conventional": "20.2.0",
-		"@diba1013/linter": "0.17.0",
+		"@diba1013/linter": "0.17.1",
 		"@types/node": "24.10.3",
 		"eslint": "9.39.1",
 		"husky": "9.1.7",
