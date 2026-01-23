@@ -10,7 +10,7 @@ permissions:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
 
     env:
       NPM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
