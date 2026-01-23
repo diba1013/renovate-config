@@ -25,7 +25,7 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
           configurationFile: .github/renovate.config.cjs
         env:
-          LOG_LEVEL: debug
+          LOG_LEVEL: info
           RENOVATE_GIT_AUTHOR_NAME: ${{ secrets.RENOVATE_GIT_AUTHOR_NAME }}
           RENOVATE_GIT_AUTHOR_EMAIL: ${{ secrets.RENOVATE_GIT_AUTHOR_EMAIL }}
           RENOVATE_GITHUB_PACKAGE_TOKEN: ${{ secrets.RENOVATE_GITHUB_PACKAGE_TOKEN }}
