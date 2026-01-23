@@ -2,7 +2,7 @@ name: Renovate
 
 on:
   schedule:
-    - cron: "15 * * * *"
+    - cron: "9/15 * * * *"
 
 permissions:
   packages: read # Allow downloading of packages.
@@ -10,7 +10,8 @@ permissions:
 jobs:
   renovate:
     name: Renovate
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     env:
       NPM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
