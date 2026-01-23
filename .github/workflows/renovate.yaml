@@ -2,7 +2,7 @@ name: Renovate
 
 on:
   schedule:
-    - cron: "15 * * * *"
+    - cron: "9/15 * * * *"
 
 permissions:
   packages: read # Allow downloading of packages.
