@@ -10,7 +10,7 @@ permissions:
 jobs:
   renovate:
     name: Renovate
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
 
     env:
       NPM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
