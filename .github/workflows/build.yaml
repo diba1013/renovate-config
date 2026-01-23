@@ -11,6 +11,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-slim
+    timeout-minutes: 5
 
     env:
       NPM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
