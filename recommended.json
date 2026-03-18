@@ -12,8 +12,13 @@
 	"packageRules": [
 		{
 			"description": "Automatically merge development / production dependencies up to minor.",
-			"matchDepTypes": ["devDependencies", "production", "packageManager", "action"],
+			"matchDepTypes": ["devDependencies", "production", "packageManager", "engines", "action"],
 			"extends": [":automergeMinor", ":automergeDigest"]
+		},
+		{
+			"description": "Automatically merge lockfile maintenance.",
+			"matchUpdateTypes": ["lockFileMaintenance"],
+			"extends": [":automergeAll"]
 		},
 		{
 			"description": "Automatically merge node updates up to major.",
