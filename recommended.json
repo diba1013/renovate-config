@@ -7,7 +7,8 @@
 		":rebaseStalePrs",
 		":semanticCommits",
 		":semanticCommitScope(deps)",
-		"npm:unpublishSafe"
+		":maintainLockFilesDisabled",
+		"security:openssf-scorecard"
 	],
 	"packageRules": [
 		{
