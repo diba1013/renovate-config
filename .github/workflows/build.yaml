@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-slim
     timeout-minutes: 5
 
-    env:
-      NPM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
@@ -26,13 +23,16 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
         with:
+          registry-url: https://npm.pkg.github.com
           node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install
         run: |
           pnpm install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Lint
         run: |
-          pnpm lint
+          pnpm run lint
