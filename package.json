@@ -12,7 +12,7 @@
 		"@commitlint/cli": "21.2.1",
 		"@commitlint/config-conventional": "21.2.0",
 		"@diba1013/linter": "0.18.0",
-		"@types/node": "25.9.4",
+		"@types/node": "25.9.5",
 		"eslint": "10.6.0",
 		"husky": "9.1.7",
 		"lint-staged": "17.0.8",
